@@ -1,3 +1,95 @@
 body {
-  background: blue;
+  padding: 0px;
+  margin: 0px;
+  background: grey;
+}
+
+nav {
+  background: #2c3e50;
+  width: 100%;
+  height: 60px;
+  padding: 25px 0px;
+  position: fixed;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+main {
+  padding-top: 85px;
+}
+
+.container {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.start > a {
+  color: white;
+  font-size: 33px;
+  text-decoration: none;
+}
+
+.start {
+float: left;
+}
+
+.container > .buttons > ol {
+  list-style: none;
+}
+
+.container > .buttons > ol > li {
+  display: inline-block;
+  color: white;
+  margin: auto 5px;
+  font-size: 17px;
+}
+
+.buttons {
+  float: right;
+}
+
+.hero {
+  background: #18bc9c;
+  clear: left;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  height: 480px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  line-height: 4px;
+}
+
+.imagen-hero {
+  width: auto;
+}
+
+.hero h2 {
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.hero p {
+  font-weight: 400;
+  font-size: 28px;
+  font-family: 'Lato', sans-serif;
+}
+
+.hero hr {
+  max-width: 250px;
+  margin: 25px auto 30px;
+  padding: 0;
+  text-align: center;
+  border: none;
+  border-top: solid 5px;
+}
+
+.hero i {
+    font-size: 32px;
+    position: relative;
+    bottom: 48px;
+    display: inline-block;
+    background-color: #18bc9c;
+    padding: 0 7px;
 }
