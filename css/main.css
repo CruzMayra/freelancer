@@ -49,7 +49,7 @@ float: left;
   float: right;
 }
 
-.hero {
+#hero {
   background: #18bc9c;
   clear: left;
   padding-top: 100px;
@@ -65,18 +65,23 @@ float: left;
   width: auto;
 }
 
-.hero h2 {
+#hero h2 {
   font-size: 80px;
   font-weight: 700;
 }
 
-.hero p {
+#hero p {
   font-weight: 400;
   font-size: 28px;
   font-family: 'Lato', sans-serif;
+  margin-top: 50px;
 }
 
-.hero hr {
+hr.star {
+  border-color: white;
+}
+
+hr {
   max-width: 250px;
   margin: 25px auto 30px;
   padding: 0;
@@ -85,11 +90,88 @@ float: left;
   border-top: solid 5px;
 }
 
-.hero i {
-    font-size: 32px;
-    position: relative;
-    bottom: 48px;
-    display: inline-block;
-    background-color: #18bc9c;
-    padding: 0 7px;
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+hr.star:after {
+  color: white;
+  background: #18bc9c;
+}
+
+hr.star-black:after {
+  color: #2c3e50;
+  background: white;
+}
+
+hr.star:after, hr.star-black:after {
+  font-family: 'FontAwesome';
+  font-size: 35px;
+  bottom: 22px;
+  display: inline-block;
+  padding: 0 7px;
+  content: '\f005';
+  }
+
+::after {
+  box-sizing: border-box;
+}
+
+#portfolio, #contact {
+  background: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  height: 650px;
+  font-family: 'Montserrat', sans-serif;
+  color: #2c3e50;
+  line-height: 4px;
+}
+
+#portfolio h2, #about h2 {
+  font-size: 52px;
+  font-weight: 700;
+}
+
+.portfolio-images > img {
+  display: inline-block;
+  width: 330px;
+  height: auto;
+  margin: 13px;
+}
+
+#about {
+  background: #18bc9c;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  text-align: center;
+  height: 400px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  line-height: 4px;
+}
+
+.description {
+  columns: 2;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 0 180px;
+  text-align: left;
+}
+
+#about p {
+  border: solid white 2px;
+  border-radius: 5px;
+  width: 200px;
+  height: auto;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
