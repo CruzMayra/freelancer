@@ -55,7 +55,7 @@ float: left;
   padding-top: 100px;
   padding-bottom: 100px;
   text-align: center;
-  height: 480px;
+  height: auto;
   font-family: 'Montserrat', sans-serif;
   color: white;
   line-height: 4px;
@@ -124,13 +124,13 @@ hr.star:after, hr.star-black:after {
   padding-top: 100px;
   padding-bottom: 100px;
   text-align: center;
-  height: 650px;
+  height: auto;
   font-family: 'Montserrat', sans-serif;
   color: #2c3e50;
   line-height: 4px;
 }
 
-#portfolio h2, #about h2 {
+#portfolio h2, #about h2, #contact h2{
   font-size: 52px;
   font-weight: 700;
 }
@@ -147,7 +147,7 @@ hr.star:after, hr.star-black:after {
   padding-top: 100px;
   padding-bottom: 50px;
   text-align: center;
-  height: 400px;
+  height: auto;
   font-family: 'Montserrat', sans-serif;
   color: white;
   line-height: 4px;
@@ -174,4 +174,34 @@ hr.star:after, hr.star-black:after {
   display: inline-block;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.send-message ul {
+  list-style: none;
+  text-align: left;
+  padding: 0 180px;
+}
+
+.send-message > ul > li > input, textarea {
+  width: 100%;
+  padding: 25px 0;
+  line-height: 2;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 23px;
+  border: none;
+  border-bottom: 0.02px solid #8693B8;
+}
+
+button {
+  background: #18bc9c;
+  border: #18bc9c;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  width: 100px;
+  height: 45px;
+  color: white;
+  border-radius: 5px;
+  margin-top: 20px;
 }
