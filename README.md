@@ -13,8 +13,12 @@ a lograr:
 
 ##Contenido del repositorio
 
-1. Archivo index.html con estructura de la página web y <link> para las hojas de estilo y fuentes de Google:
-1.1 Menú de navegación (<nav>) con botones flotantes.
-1.2 Sección de perfil con imagen (<img>), título (<h2>) y descricpión (<p>)alineadas al centro con ayuda de margenes left y rigth auto.
-1.3 Sección de portafolio con título (<h2>) e imagenes de portafolio dentro de un contenedor para controlar el alto (height).
-1.4 Sección acerca del servicio
+I. Archivo index.html con estructura de la página web y link para las hojas de estilo (main.css y font-awesone.min.css) y fuentes de Google:
+  1. Menú de navegación (nav) con botones flotantes.
+  2. Sección de Perfil con imagen (img), título (h2) y descripción (p) alineadas al centro con ayuda de margenes left y rigth auto.
+  3. Sección de Portafolio con título (h2) e imagenes de portafolio dentro de un contenedor para controlar el alto (height).
+  4. Sección acerca del servicio con título (h2), descripción a dos columnas (div) y botón de descarga.
+  5. Sección de Contacto con título (h2) y formulario para el envío de mensajes (input y textarea).
+  6. Sección del Pie de Página con div flotantes e iconos (FontAwesone).
+
+II. Archivo CSS con estilos para las diferentes secciones definidas en el archivo Index.html e iconos insertados.
