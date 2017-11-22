@@ -3,37 +3,37 @@
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Montserrat:400,600,700,800,900" rel="stylesheet">
-    <link rel="stylesheet" href="css/vendors/font-awesome.min.css">
+    <link rel="stylesheet" href="css/vendors/font-awesome.min.css"> <!-- hoja de estilos con los iconos -->
     <link rel="stylesheet" href="css/main.css">
     <title>Freelancer project</title>
   </head>
   <body>
     <nav>
-      <section class="container">
+      <section class="container"> <!--La clase container sirve de apoyo para definir el tamaño de una sección sin usar margin o padding-->
         <div class="start">
           <a href="#">START BOOTSTRAP</a>
         </div>
         <div class="buttons">
           <ol>
-            <li>PORTFOLIO</li>
-            <li>ABOUT</li>
-            <li>CONTACT</li>
+            <li>PORTFOLIO</li> <!-- boton flotante -->
+            <li>ABOUT</li> <!-- boton flotante -->
+            <li>CONTACT</li> <!-- boton flotante -->
           </ol>
         </div>
       </section>
-    </nav>
+     </nav> <!-- fin del menú de navegación -->
 
-      <main>
+      <main> <!-- inicio de la sección con perfil -->
         <section id="hero">
           <div class="container">
             <img src="assets/images/profile.png" alt="imagen-hero">
             <h2>START BOOTSTRAP</h2>
-            <hr class="star"></hr>
+            <hr class="star"></hr> <!-- clase utilizada para dar efecto a estrella, aún pendiente de terminar -->
             <p>Web Developer-Graphic Artist-User Experience Designer</p>
           </div>
-        </section>
+        </section> <!-- fin de la sección con perfil -->
 
-        <section id="portfolio">
+        <section id="portfolio"> <!-- inicio de la sección del portafolio -->
           <div class="container">
             <h2>PORTFOLIO</h2>
             <hr class="star-black"></hr>
@@ -46,27 +46,27 @@
               <img src="assets/images/portfolio/submarine.png" alt="submarine">
             </div>
           </div>
-        </section>
+        </section> <!-- fin de la sección del portafolio -->
 
-        <section id="about">
+        <section id="about"> <!-- inicio de la sección acerca del producto -->
           <div class="container">
             <h2>ABOUT</h2>
             <hr class="star"></hr>
             <div class="description">
-              Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization. Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!
+              Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization. Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point! <!-- se dividio en dos columnas con el uso de estilos -->
             </div>
-            <p>
-              <i class="fa fa-download" aria-hidden="true"></i>
+            <p> <!-- sustituir por un button -->
+              <i class="fa fa-download" aria-hidden="true"></i> <!-- Considerar utilizar button en lugar de un párrafo-->
               Download Theme
             </p>
           </div>
-        </section>
+        </section> <!-- fin de la sección acerca del producto -->
 
-        <section id="contact">
+        <section id="contact"> <!-- inicio de la sección de contacto -->
           <div class="container">
             <h2>CONTACT ME</h2>
             <hr class="star-black"></hr>
-            <form class="send-message" action="index.html" method="get">
+            <form class="send-message" action="index.html" method="post"> <!-- inicio de formulario -->
               <ul>
                 <li><input type="text" placeholder="Name"></li>
                 <li><input type="email" placeholder="Email Address"></li>
@@ -74,26 +74,26 @@
                 <li><textarea rows="5" placeholder="Message"></textarea></li>
                 <li><button type="button">Send</button></li>
               </ul>
-            </form>
+            </form> <!-- fin de formulario -->
           </div>
-        </section>
+        </section><!-- fin de la sección de contacto -->
       </main>
 
-      <footer>
+      <footer> <!-- inicio del pie de página -->
         <div class="container">
-          <div class="address">
+          <div class="address"> <!-- div flotado a la izquierda -->
             <h2>LOCATION</h2>
             <p>3481 Melrose Place</p>
             <p>Beverly Hills, CA 90210</p>
           </div>
-          <div class="notification">
+          <div class="notification"> <!-- div flotado a la derecha -->
             <h2>ABOUT FREELANCER</h2>
             <p>Freelancer is a free to use, open source Bootstrap theme created by <strong>Start Bootstrap</strong>.</p>
           </div>
           <div class="social-network">
             <h2>AROUND THE WEB</h2>
-            <p>
-              <i class="fa fa-facebook" aria-hidden="true"></i>
+            <p> <!-- párrafo con iconos de redes sociales -->
+              <i class="fa fa-facebook" aria-hidden="true"></i>  <!-- Este icono no tiene un buen borde redondo, corregir-->
               <i class="fa fa-google-plus" aria-hidden="true"></i>
               <i class="fa fa-twitter" aria-hidden="true"></i>
               <i class="fa fa-linkedin" aria-hidden="true"></i>
@@ -104,6 +104,6 @@
             Copyright © Your Website 2017
           </div>
         </div>
-      </footer>
+      </footer> <!-- fin del pie de página -->
   </body>
 </html>

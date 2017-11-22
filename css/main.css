@@ -1,38 +1,38 @@
 body {
   padding: 0px;
   margin: 0px;
-  background: grey;
+  background: grey /*fondo de control para detectar movimientos inesperados de los elementos, sobre todo los que tienen fondo blanco*/
 }
 
 nav {
   background: #2c3e50;
-  width: 100%;
-  height: 60px;
+  width: 100%; /*tratando de hacer un sitio más flexible*/
+  height: 60px; /*no siempre funciona :P*/
   padding: 25px 0px;
-  position: fixed;
+  position: fixed; /*declaración para fijar el menú de navegación, aún haciendo scroll*/
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
 
 main {
-  padding-top: 85px;
+  padding-top: 85px; /*aumentando el padding para evitar el solapamiento entre el menú de navegación y la sección hero (perfil)*/
 }
 
 footer {
   background: #2c3e50;
-  width: 100%;
-  height: auto;
+  width: 100%; /*tratando de hacer el sitio más flexible*/
+  height: auto; /*tratando de hacer el sitio más flexible*/
   padding: 20px 0px;
   color: white;
 }
 
 footer h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif; /*diferenciando fuente*/
   font-size: 28px;
 }
 
 footer p {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif; /*diferenciando fuente*/
   font-size: 20px;
 }
 
@@ -40,11 +40,11 @@ footer div {
   text-align: center;
 }
 
-hr.star {
+hr.star {  /*estilos para la estrella debajo de los títulos*/
   border-color: white;
 }
 
-hr {
+hr {  /*estilos para la estrella debajo de los títulos*/
   max-width: 250px;
   margin: 25px auto 30px;
   padding: 0;
@@ -53,23 +53,23 @@ hr {
   border-top: solid 5px;
 }
 
-hr {
+hr {  /*estilos para la estrella debajo de los títulos*/
   box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
 
-hr.star:after {
+hr.star:after {  /*estilos para la estrella debajo de los títulos*/
   color: white;
   background: #18bc9c;
 }
 
-hr.star-black:after {
+hr.star-black:after {  /*estilos para la estrella debajo de los títulos*/
   color: #2c3e50;
   background: white;
 }
 
-hr.star:after, hr.star-black:after {
+hr.star:after, hr.star-black:after {  /*estilos para la estrella debajo de los títulos*/
   font-family: 'FontAwesome';
   font-size: 35px;
   bottom: 22px;
@@ -78,7 +78,7 @@ hr.star:after, hr.star-black:after {
   content: '\f005';
   }
 
-button {
+button { /*estilos para el botton del formulario de contacto*/
   background: #18bc9c;
   border: #18bc9c;
   font-weight: 700;
@@ -91,59 +91,55 @@ button {
   margin-top: 20px;
 }
 
-.container {
+.container { /*contenedor para definir los margenes generales*/
   width: 80%;
   margin-right: auto;
   margin-left: auto;
 }
 
-.start > a {
+.start > a { /* estilos para la barra de navegación*/
   color: white;
   font-size: 33px;
   text-decoration: none;
 }
 
-.start {
+.start { /* estilos para la barra de navegación*/
 float: left;
 }
 
-.container > .buttons > ol {
-  list-style: none;
-}
-
-.container > .buttons > ol > li {
+.container > .buttons > ol > li { /*estilos para los botones del menú de navegación*/
   display: inline-block;
   color: white;
   margin: auto 5px;
   font-size: 17px;
+  list-style: none;
 }
 
-.buttons {
+.buttons { /*botones flotantes del menú de navegación*/
   float: right;
 }
 
-#hero {
+#hero { /*EStilos para la sección de perfil*/
   background: #18bc9c;
   clear: left;
   padding-top: 100px;
   padding-bottom: 100px;
   text-align: center;
-  height: auto;
   font-family: 'Montserrat', sans-serif;
   color: white;
   line-height: 4px;
 }
 
-.imagen-hero {
+.imagen-hero { /*EStilos para la sección de perfil*/
   width: auto;
 }
 
-#hero h2 {
+#hero h2 { /*EStilos para la sección de perfil*/
   font-size: 80px;
   font-weight: 700;
 }
 
-#hero p {
+#hero p { /*EStilos para la sección de perfil*/
   font-weight: 400;
   font-size: 28px;
   font-family: 'Lato', sans-serif;
@@ -151,11 +147,11 @@ float: left;
 }
 
 
-::after {
+::after { /*estilos para la estrella debajo de los títulos*/
   box-sizing: border-box;
 }
 
-#portfolio, #contact {
+#portfolio, #contact { /*estilos para las secciones que tienen un fondo blanco*/
   background: white;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -166,19 +162,19 @@ float: left;
   line-height: 4px;
 }
 
-#portfolio h2, #about h2, #contact h2{
+#portfolio h2, #about h2, #contact h2{ /*estilos de los títulos de las secciones*/
   font-size: 52px;
   font-weight: 700;
 }
 
-.portfolio-images > img {
+.portfolio-images > img { /*estilos para las images del portafolio*/
   display: inline-block;
   width: 330px;
   height: auto;
   margin: 13px;
 }
 
-#about {
+#about { /*estilos de la sección acerca del producto*/
   background: #18bc9c;
   padding-top: 100px;
   padding-bottom: 50px;
@@ -189,7 +185,7 @@ float: left;
   line-height: 4px;
 }
 
-.description {
+.description { /*estilos para la descripción del servicio*/
   columns: 2;
   font-family: 'Lato', sans-serif;
   line-height: 1.5;
@@ -199,7 +195,7 @@ float: left;
   text-align: left;
 }
 
-#about p {
+#about p { /*estilos para la sección de descripción del producto*/
   border: solid white 2px;
   border-radius: 5px;
   width: 200px;
@@ -212,13 +208,13 @@ float: left;
   padding-bottom: 10px;
 }
 
-.send-message ul {
+.send-message ul { /*estilos para el formulario de contacto*/
   list-style: none;
   text-align: left;
   padding: 0 180px;
 }
 
-.send-message > ul > li > input, textarea {
+.send-message > ul > li > input, textarea { /*estilos para el formulario de contacto (mensaje)*/
   width: 100%;
   padding: 25px 0;
   line-height: 2;
@@ -229,30 +225,30 @@ float: left;
   border-bottom: 0.02px solid #8693B8;
 }
 
-.address {
+.address { /*estilos para el footer*/
   float: left;
   line-height: 5px;
 }
 
-.address h2 {
+.address h2 { /*estilos para el footer*/
   margin: 15px 0;
   margin-bottom: 35px;
 }
 
- .notification {
+ .notification { /*estilos para el footer*/
    float: right;
    width: 30%;
  }
 
- .notification h2 {
+ .notification h2 { /*estilos para el footer*/
    margin: 0;
  }
 
-.notification strong {
+.notification strong { /*estilos para el footer*/
   color: #18bc9c;
 }
 
-.fa-facebook,
+.fa-facebook, /*estilos para los botones de redes sociales en el footer*/
 .fa-google-plus,
 .fa-twitter,
 .fa-linkedin,
@@ -264,7 +260,7 @@ float: left;
   border-radius: 50%;
 }
 
-.clear {
+.clear { /*estilos para la última línea del footer*/
   clear: left;
   font-family: 'Lato', sans-serif;
   font-size: 18px;
