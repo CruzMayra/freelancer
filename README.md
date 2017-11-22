@@ -11,6 +11,10 @@ a lograr:
 
 ![Freelancer Website](docs/fullpage.png)
 
+Este fue el resultado obtenido:
+
+![Freelancer project](https://goo.gl/W52SHd)
+
 ##Contenido del repositorio
 
 I. Archivo index.html con estructura de la página web y link para las hojas de estilo (main.css y font-awesone.min.css) y fuentes de Google:
