@@ -169,7 +169,7 @@ float: left;
 
 .portfolio-images > img { /*estilos para las images del portafolio*/
   display: inline-block;
-  width: 330px;
+  width: 30%;
   height: auto;
   margin: 13px;
 }
