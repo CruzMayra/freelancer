@@ -13,7 +13,7 @@ a lograr:
 
 Este fue el resultado obtenido:
 
-![Freelancer project](https://goo.gl/W52SHd)
+[Freelancer project](https://goo.gl/W52SHd)
 
 ##Contenido del repositorio
 
