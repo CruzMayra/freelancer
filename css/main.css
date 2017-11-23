@@ -1,10 +1,16 @@
 body {
   padding: 0px;
   margin: 0px;
-  background: grey /*fondo de control para detectar movimientos inesperados de los elementos, sobre todo los que tienen fondo blanco*/
+  background: grey; /*fondo de control para detectar movimientos inesperados de los elementos, sobre todo los que tienen fondo blanco*/
+  font-family: 'Montserrat', sans-serif;
+}
+
+body, html {
+  height: 100%;
 }
 
 nav {
+  color: white;
   background: #2c3e50;
   width: 100%; /*tratando de hacer un sitio más flexible*/
   height: 60px; /*no siempre funciona :P*/
@@ -12,6 +18,7 @@ nav {
   position: fixed; /*declaración para fijar el menú de navegación, aún haciendo scroll*/
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
+  overflow: hidden;
 }
 
 main {
@@ -40,55 +47,20 @@ footer div {
   text-align: center;
 }
 
-hr.star {  /*estilos para la estrella debajo de los títulos*/
-  border-color: white;
-}
-
-hr {  /*estilos para la estrella debajo de los títulos*/
-  max-width: 250px;
-  margin: 25px auto 30px;
-  padding: 0;
-  text-align: center;
-  border: none;
-  border-top: solid 5px;
-}
-
-hr {  /*estilos para la estrella debajo de los títulos*/
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
-}
-
-hr.star:after {  /*estilos para la estrella debajo de los títulos*/
-  color: white;
-  background: #18bc9c;
-}
-
-hr.star-black:after {  /*estilos para la estrella debajo de los títulos*/
-  color: #2c3e50;
-  background: white;
-}
-
-hr.star:after, hr.star-black:after {  /*estilos para la estrella debajo de los títulos*/
-  font-family: 'FontAwesome';
-  font-size: 35px;
-  bottom: 22px;
+#hero hr,
+#about hr {  /*estilos para la estrella debajo de los títulos*/
+  background-color: white;
+  width: 70px;
+  height: 3px;
   display: inline-block;
-  padding: 0 7px;
-  content: '\f005';
-  }
+}
 
-button { /*estilos para el botton del formulario de contacto*/
-  background: #18bc9c;
-  border: #18bc9c;
-  font-weight: 700;
-  font-family: 'Lato', sans-serif;
-  font-size: 20px;
-  width: 100px;
-  height: 45px;
-  color: white;
-  border-radius: 5px;
-  margin-top: 20px;
+#portfolio hr,
+#contact hr {
+  background-color: #2c3e50;
+  width: 70px;
+  height: 3px;
+  display: inline-block;
 }
 
 .container { /*contenedor para definir los margenes generales*/
@@ -101,15 +73,15 @@ button { /*estilos para el botton del formulario de contacto*/
   color: white;
   font-size: 33px;
   text-decoration: none;
+  font-weight: 700;
 }
 
 .start { /* estilos para la barra de navegación*/
-float: left;
+  display: inline-block;
 }
 
 .container > .buttons > ol > li { /*estilos para los botones del menú de navegación*/
   display: inline-block;
-  color: white;
   margin: auto 5px;
   font-size: 17px;
   list-style: none;
@@ -119,15 +91,14 @@ float: left;
   float: right;
 }
 
-#hero { /*EStilos para la sección de perfil*/
+#hero, #about { /*EStilos para la sección de perfil*/
   background: #18bc9c;
-  clear: left;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 100px 0 100px 0;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
   color: white;
   line-height: 4px;
+  height: 78.3%;
+
 }
 
 .imagen-hero { /*EStilos para la sección de perfil*/
@@ -146,11 +117,6 @@ float: left;
   margin-top: 50px;
 }
 
-
-::after { /*estilos para la estrella debajo de los títulos*/
-  box-sizing: border-box;
-}
-
 #portfolio, #contact { /*estilos para las secciones que tienen un fondo blanco*/
   background: white;
   padding-top: 100px;
@@ -162,7 +128,9 @@ float: left;
   line-height: 4px;
 }
 
-#portfolio h2, #about h2, #contact h2{ /*estilos de los títulos de las secciones*/
+#portfolio h2,
+#about h2,
+#contact h2 { /*estilos de los títulos de las secciones*/
   font-size: 52px;
   font-weight: 700;
 }
@@ -172,17 +140,6 @@ float: left;
   width: 30%;
   height: auto;
   margin: 13px;
-}
-
-#about { /*estilos de la sección acerca del producto*/
-  background: #18bc9c;
-  padding-top: 100px;
-  padding-bottom: 50px;
-  text-align: center;
-  height: auto;
-  font-family: 'Montserrat', sans-serif;
-  color: white;
-  line-height: 4px;
 }
 
 .description { /*estilos para la descripción del servicio*/
@@ -198,14 +155,19 @@ float: left;
 #about p { /*estilos para la sección de descripción del producto*/
   border: solid white 2px;
   border-radius: 5px;
-  width: 200px;
-  height: auto;
+  width: 20%;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 20px;
   display: inline-block;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+#about p:hover {
+  background: white;
+  color: #18bc9c;
+  cursor: pointer;
 }
 
 .send-message ul { /*estilos para el formulario de contacto*/
@@ -223,6 +185,17 @@ float: left;
   font-size: 23px;
   border: none;
   border-bottom: 0.02px solid #8693B8;
+  outline: none;
+}
+
+.send-message > ul > li > .green-button { /*estilos para el botton del formulario de contacto*/
+  background-color: #18bc9c;
+  font-size: 20px;
+  width: 15%;
+  color: white;
+  border-radius: 10px;
+  margin-top: 20px;
+  display: block;
 }
 
 .address { /*estilos para el footer*/
@@ -253,7 +226,6 @@ float: left;
 .fa-twitter,
 .fa-linkedin,
 .fa-dribbble {
-  display: inline-block;
   margin: 0 .3%;
   border: solid white 2px;
   padding: 1%;

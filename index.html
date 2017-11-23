@@ -8,18 +8,18 @@
     <title>Freelancer project</title>
   </head>
   <body>
-    <nav>
+    <nav> <!-- inicio de la sección del menú de navegación -->
       <section class="container"> <!--La clase container sirve de apoyo para definir el tamaño de una sección sin usar margin o padding-->
-        <div class="start">
+        <span class="start">
           <a href="#">START BOOTSTRAP</a>
-        </div>
-        <div class="buttons">
+        </span>
+        <span class="buttons">
           <ol>
-            <li>PORTFOLIO</li> <!-- boton flotante -->
-            <li>ABOUT</li> <!-- boton flotante -->
-            <li>CONTACT</li> <!-- boton flotante -->
+            <li>PORTFOLIO</li>
+            <li>ABOUT</li>
+            <li>CONTACT</li>
           </ol>
-        </div>
+        </span>
       </section>
      </nav> <!-- fin del menú de navegación -->
 
@@ -28,7 +28,9 @@
           <div class="container">
             <img src="assets/images/profile.png" alt="imagen-hero">
             <h2>START BOOTSTRAP</h2>
-            <hr class="star"></hr> <!-- clase utilizada para dar efecto a estrella, aún pendiente de terminar -->
+            <hr>
+            <i class="fa fa-star fa-2x" atria-hidden="true"></i>
+            <hr>
             <p>Web Developer-Graphic Artist-User Experience Designer</p>
           </div>
         </section> <!-- fin de la sección con perfil -->
@@ -36,7 +38,9 @@
         <section id="portfolio"> <!-- inicio de la sección del portafolio -->
           <div class="container">
             <h2>PORTFOLIO</h2>
-            <hr class="star-black"></hr>
+            <hr>
+            <i class="fa fa-star fa-2x" atria-hidden="true"></i>
+            <hr>
             <div class="portfolio-images">
               <img src="assets/images/portfolio/cabin.png" alt="cabin">
               <img src="assets/images/portfolio/cake.png" alt="cake">
@@ -51,7 +55,9 @@
         <section id="about"> <!-- inicio de la sección acerca del producto -->
           <div class="container">
             <h2>ABOUT</h2>
-            <hr class="star"></hr>
+            <hr>
+            <i class="fa fa-star fa-2x" atria-hidden="true"></i>
+            <hr>
             <div class="description">
               Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization. Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point! <!-- se dividio en dos columnas con el uso de estilos -->
             </div>
@@ -65,14 +71,16 @@
         <section id="contact"> <!-- inicio de la sección de contacto -->
           <div class="container">
             <h2>CONTACT ME</h2>
-            <hr class="star-black"></hr>
+            <hr>
+            <i class="fa fa-star fa-2x" atria-hidden="true"></i>
+            <hr>
             <form class="send-message" action="index.html" method="post"> <!-- inicio de formulario -->
               <ul>
                 <li><input type="text" placeholder="Name"></li>
                 <li><input type="email" placeholder="Email Address"></li>
                 <li><input type="tel" placeholder="Phone Number"></li>
                 <li><textarea rows="5" placeholder="Message"></textarea></li>
-                <li><button type="button">Send</button></li>
+                <li><input class="green-button"type="submit" name="" value="Send"></li>
               </ul>
             </form> <!-- fin de formulario -->
           </div>
